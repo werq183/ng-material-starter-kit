@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 import { CategoriesListComponent } from './categories-list.component';
-import {MatCardModule} from "@angular/material/card";
-import {MatListModule} from "@angular/material/list";
-import {AsyncPipe, NgForOf} from "@angular/common";
+import { AsyncPipe, NgForOf } from '@angular/common';
 
 @NgModule({
   imports: [
     MatCardModule,
     MatListModule,
     AsyncPipe,
-    NgForOf
+    NgForOf,
+    CommonModule
   ],
   declarations: [CategoriesListComponent],
   providers: [],
