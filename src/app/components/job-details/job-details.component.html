@@ -1,0 +1,5 @@
+<h1>Job details</h1>
+<ng-container *ngIf="details$ | async as item">
+  <b>Title:</b> {{ item.title}}<br>
+  <b>Description:</b> {{item.description}}
+</ng-container>
